@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/edit_task_menu"
+        android:icon="@drawable/edit_button"
+        android:title="@string/edit_menu_button"
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/ok_task_menu"
+        android:icon="@drawable/button_ok"
+        android:title="@string/save_menu_button"
+        android:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/back_button_menu"
+        android:icon="@drawable/button_back"
+        android:title="@string/back_menu_button"
+        android:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/delete_task_menu"
+        android:icon="@drawable/delete_button"
+        android:title="@string/delete_menu_button"
+        android:showAsAction="ifRoom">
+    </item>
+</menu>

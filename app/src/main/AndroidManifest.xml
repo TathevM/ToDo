@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.havayi.todo">
+
+    <permission android:name="com.havayi.todo.READ_WRITE">
+    </permission>
+
+    <uses-permission android:name="android.permission.VIBRATE">
+
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".ToDo"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="receiver.AlarmReceiver">
+        </receiver>
+        <service android:name="services.TaskAlarmerService">
+        </service>
+        <provider
+            android:authorities="com.havayi.todo.providers"
+            android:name="providers.TaskProvider"
+            android:permission="com.havayi.todo.READ_WRITE"
+            android:exported="true">
+        </provider>
+    </application>
+
+</manifest>

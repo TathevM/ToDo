@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="back_menu_button">Back</string>
+    <string name="new_task_button_text">+</string>
+    <string name="new_task_title_hint">Title (max 15 symbols)</string>
+    <string name="new_task_description_hint">Description</string>
+    <string name="alert_text">Alert me</string>
+    <string name="radio_1_day_before">1 day before</string>
+    <string name="radio_15_mins_before">15 minutes before</string>
+    <string name="radio_1_hour_before">1 hour before</string>
+    <string name="edit_menu_button">Edit</string>
+    <string name="delete_menu_button">Delete</string>
+    <string name="save_menu_button">Save</string>
+    <string name="dont_save">No</string>
+</resources>
